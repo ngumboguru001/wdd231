@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #8b1e1e;
+    --secondary-color: #ffd447;
+    --nav-color: #3d405b;
+    --hover-color: #e07a5f;
+    --background-color: #fff8f0;
+    --text-color: #2b2b2b;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    min-height: 44px;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--nav-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation .current a {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 1rem;
+}
+
+section h2 {
+    margin-top: 0;
+    padding: 0.75rem;
+    background-color: var(--nav-color);
+    color: var(--white);
+    text-align: center;
+}
+
+section img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.course-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-buttons button {
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--nav-color);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.course-list {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.course-card {
+    padding: 1rem;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.course-card.completed {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.social-media a {
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.social-media img {
+    width: 44px;
+    height: 44px;
+}
