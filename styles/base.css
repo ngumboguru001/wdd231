@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #8B1E1E;
+    --secondary-color: #FFD447;
+    --nav-color: #3D405B;
+    --hover-color: #E07A5F;
+    --background-color: #FFF8F0;
+    --text-color: #2B2B2B;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #2B2B2B;
+}
+
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 50px auto 44px;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background-color: #8B1E1E;
+    color: #FFFFFF;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header span {
+    font-size: 1.4rem;
+}
+
+
+/* Hamburger */
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    color: #FFD447;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/* Navigation */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    min-height: 44px;
+    padding: 1rem;
+    color: #FFFFFF;
+    background-color: #3D405B;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation .current a {
+    background-color: #FFD447;
+    color: #2B2B2B;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 1rem;
+    background-color: #8B1E1E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* Social Media */
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.social-media img {
+    width: 48px;
+    height: 48px;
+}
+
+
+/* Larger screens */
+
+@media (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation a {
+        min-height: 44px;
+        padding: 1rem 2rem;
+    }
+
+    .navigation a:hover {
+        background-color: #E07A5F;
+        color: #FFFFFF;
+    }
+}
