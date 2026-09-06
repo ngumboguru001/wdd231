@@ -1,0 +1,23 @@
+{
+  "family_name": "Gumboguru",
+  "move_in_date": "2024-01-15",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Nyashadzashe Gumboguru",
+      "gender": "Male",
+      "birthdate": "1998-04-12"
+    },
+    {
+      "name": "Chipo Gumboguru",
+      "gender": "Female",
+      "birthdate": "2000-09-21"
+    },
+    {
+      "name": "Tariro Gumboguru",
+      "gender": "Female",
+      "birthdate": "2022-06-05"
+    }
+  ]
+}
