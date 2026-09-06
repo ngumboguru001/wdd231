@@ -1,7 +1,10 @@
 @media (min-width: 768px) {
 
     header {
-        grid-template-columns: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
     }
 
     .hamburger {
@@ -14,11 +17,15 @@
 
     .navigation ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .navigation a {
-        padding: 1rem 2rem;
+        padding: 0.75rem 1.5rem;
     }
 
     .navigation a:hover {
@@ -27,14 +34,17 @@
     }
 
     .home-grid {
+        display: grid;
         grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
     }
 
     .certificate {
         grid-column: 1 / 3;
     }
 
-    .certificate #course-list {
+    .certificate #course-list,
+    .course-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 0.5rem;
