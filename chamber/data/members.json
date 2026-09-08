@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Twinkle Mobile",
+    "address": "Shop 19, Tauro Tragus Centre, Kwekwe",
+    "phone": "+263 77 735 2002",
+    "website": "https://twinklemobile.co.zw",
+    "image": "images/member1.webp",
+    "membership": 3
+  },
+  {
+    "name": "Dendairy",
+    "address": "956 Clyde Rd, Kwekwe",
+    "phone": "+263 55 22008",
+    "website": "https://dendairy.com",
+    "image": "images/member2.webp",
+    "membership": 2
+  },
+  {
+    "name": "Biznetwork Communication Systems",
+    "address": "Shop 9b, Third Street, Kwekwe",
+    "phone": "+263 55 25386",
+    "website": "https://www.zimbabweyp.com/company/1518/Biznetwork_Communication_Systems",
+    "image": "images/member3.webp",
+    "membership": 1
+  },
+  {
+    "name": "Metro Cash & Carry",
+    "address": "8 Cobar Street, Kwekwe",
+    "phone": "+263 55 25252",
+    "website": "https://metropeechandbrowne.com",
+    "image": "images/member4.webp",
+    "membership": 2
+  },
+  {
+    "name": "Rush Hour Logistics",
+    "address": "11 J. Tongogara Street, Kwekwe",
+    "phone": "+263 71 964 1144",
+    "website": "https://rushhourservices.com",
+    "image": "images/member5.webp",
+    "membership": 1
+  },
+  {
+    "name": "Miet Engineering",
+    "address": "2812 Eddison Crescent, Light Industrial Sites, Kwekwe",
+    "phone": "+263 77 996 9220",
+    "website": "https://mietengineering.co.za",
+    "image": "images/member6.webp",
+    "membership": 3
+  },
+  {
+    "name": "BancABC Kwekwe",
+    "address": "Ground Floor Calvados Building, 61 Robert Mugabe Way, Kwekwe",
+    "phone": "+263 55 2525216",
+    "website": "https://bancabc.co.zw",
+    "image": "images/member7.webp",
+    "membership": 2
+  }
+]

@@ -1,0 +1,25 @@
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .list section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

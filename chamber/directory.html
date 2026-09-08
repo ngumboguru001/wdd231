@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwekwe Chamber of Commerce Directory</title>
+    <meta name="description" content="Business directory page for the Kwekwe Chamber of Commerce.">
+    <meta name="author" content="Nyashadzashe Gumboguru">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kwekwe Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover local businesses and members of the Kwekwe Chamber of Commerce.">
+    <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/og-image.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS Link -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Kwekwe Chamber Logo" width="60" height="60">
+            <h1>Kwekwe Chamber of Commerce</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Directory</h2>
+        
+        <!-- Toggle Buttons -->
+        <div class="views">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+
+        <!-- Dynamic Member Display -->
+        <div id="members" class="grid"></div>
+    </main>
+
+    <footer>
+        <p>Kwekwe Chamber of Commerce | 100 Civic Centre, Kwekwe</p>
+        <p>Nyashadzashe Gumboguru | WDD 231</p>
+        <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
