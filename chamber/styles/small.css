@@ -138,3 +138,121 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+/* Form Layout */
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.join-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.join-form legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.join-form input, 
+.join-form select, 
+.join-form textarea {
+    padding: 0.75rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #003366;
+}
+
+/* Membership Cards & Entry Animation */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+    /* Requirement 14: Animation applied on initial display (not hover) */
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Modal Styling */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Desktop layout adjustment */
+@media (min-width: 768px) {
+    .join-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .join-form {
+        flex: 2;
+    }
+    .cards-container {
+        flex: 1;
+    }
+}

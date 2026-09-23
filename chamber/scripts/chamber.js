@@ -128,3 +128,10 @@ function displaySpotlight(members) {
 if (document.getElementById('spotlight-container')) {
     getMembersData();
 }
+
+// --- Hidden Timestamp for Join Form ---
+const timestampField = document.getElementById('timestamp');
+if (timestampField) {
+    const now = new Date();
+    timestampField.value = now.toLocaleString();
+}

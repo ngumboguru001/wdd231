@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber | Kwekwe Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership with the Kwekwe Chamber of Commerce to grow your business and access exclusive networking and advertising benefits.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo" width="60" height="60">
+            <span class="chamber-title">Kwekwe Chamber</span>
+        </div>
+        <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav>
+            <ul id="menu-list" class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Membership Application</h1>
+        
+        <div class="join-container">
+            <!-- Form Section -->
+            <form method="get" action="thankyou.html" class="join-form">
+                <fieldset>
+                    <legend>Applicant Personal Information</legend>
+                    
+                    <label>First Name *
+                        <input type="text" name="fname" title="Enter your first name" autocomplete="given-name" required>
+                    </label>
+
+                    <label>Last Name *
+                        <input type="text" name="lname" title="Enter your last name" autocomplete="family-name" required>
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="title" title="Enter your title (at least 7 letters, hyphens, or spaces)" autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$" placeholder="e.g. Managing Director">
+                    </label>
+
+                    <label>Email Address *
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@domain.com" required>
+                    </label>
+
+                    <label>Mobile Phone Number *
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" placeholder="e.g. +263770000000" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Organization Information</legend>
+
+                    <label>Business/Organization Name *
+                        <input type="text" name="organization" title="Enter your organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label>Membership Level *
+                        <select name="membership" required>
+                            <option value="" disabled selected>Choose a Membership Level...</option>
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business/Organization Description
+                        <textarea name="description" title="Provide a brief description of your organization" placeholder="Tell us about your organization..."></textarea>
+                    </label>
+                </fieldset>
+
+                <!-- Hidden timestamp field -->
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Join the Chamber" class="submit-btn">
+            </form>
+
+            <!-- Membership Cards Section -->
+            <div class="cards-container">
+                <!-- NP Card -->
+                <div class="membership-card np-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <button type="button" onclick="document.getElementById('modal-np').showModal()">More Information</button>
+                </div>
+
+                <!-- Bronze Card -->
+                <div class="membership-card bronze-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Standard entry-level benefits.</p>
+                    <button type="button" onclick="document.getElementById('modal-bronze').showModal()">More Information</button>
+                </div>
+
+                <!-- Silver Card -->
+                <div class="membership-card silver-card">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced visibility & discounts.</p>
+                    <button type="button" onclick="document.getElementById('modal-silver').showModal()">More Information</button>
+                </div>
+
+                <!-- Gold Card -->
+                <div class="membership-card gold-card">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure & homepage spotlight.</p>
+                    <button type="button" onclick="document.getElementById('modal-gold').showModal()">More Information</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals for Membership Levels -->
+        <dialog id="modal-np">
+            <h2>NP Membership Benefits</h2>
+            <p>Designed specifically for registered non-profit entities. Includes waived fees, listing in the community directory, and invitations to general chamber meetings.</p>
+            <button onclick="document.getElementById('modal-np').close()">Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze">
+            <h2>Bronze Membership Benefits</h2>
+            <p>Includes standard directory listing, basic training session discounts, and newsletter subscriptions.</p>
+            <button onclick="document.getElementById('modal-bronze').close()">Close</button>
+        </dialog>
+
+        <dialog id="modal-silver">
+            <h2>Silver Membership Benefits</h2>
+            <p>Includes all Bronze features, 15% event discounts, rotational exposure on partner networks, and priority networking event invitations.</p>
+            <button onclick="document.getElementById('modal-silver').close()">Close</button>
+        </dialog>
+
+        <dialog id="modal-gold">
+            <h2>Gold Membership Benefits</h2>
+            <p>Maximum privileges including guaranteed homepage spotlight positions, free entry to all chamber events, premium advertising placement, and VIP boardroom access.</p>
+            <button onclick="document.getElementById('modal-gold').close()">Close</button>
+        </dialog>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kwekwe Chamber of Commerce | Nyashadzashe Gumboguru | W04 Assignment</p>
+        <p id="last-modified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js" defer></script>
+</body>
+</html>

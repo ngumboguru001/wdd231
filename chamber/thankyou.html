@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Submitted | Kwekwe Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Kwekwe Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo" width="60" height="60">
+            <span class="chamber-title">Kwekwe Chamber</span>
+        </div>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Joining!</h1>
+        <p>Your application has been received successfully. Below are the details you provided:</p>
+        
+        <div id="results" class="results-card">
+            <!-- Dynamically populated via JavaScript query params -->
+        </div>
+
+        <p><a href="index.html" class="cta-button">Return to Home Page</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kwekwe Chamber of Commerce | Nyashadzashe Gumboguru</p>
+        <p id="last-modified"></p>
+    </footer>
+
+    <script>
+        // Populate footer dates
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('last-modified').textContent = `Last Modification: ${document.lastModified}`;
+
+        // Parse query parameters
+        const currentUrl = window.location.href;
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        const fname = urlParams.get('fname') || 'N/A';
+        const lname = urlParams.get('lname') || 'N/A';
+        const email = urlParams.get('email') || 'N/A';
+        const phone = urlParams.get('phone') || 'N/A';
+        const organization = urlParams.get('organization') || 'N/A';
+        const timestamp = urlParams.get('timestamp') || 'N/A';
+
+        const resultsContainer = document.getElementById('results');
+        resultsContainer.innerHTML = `
+            <p><strong>First Name:</strong> ${fname}</p>
+            <p><strong>Last Name:</strong> ${lname}</p>
+            <p><strong>Email Address:</strong> ${email}</p>
+            <p><strong>Mobile Phone:</strong> ${phone}</p>
+            <p><strong>Business/Organization:</strong> ${organization}</p>
+            <p><strong>Application Timestamp:</strong> ${timestamp}</p>
+        `;
+    </script>
+</body>
+</html>
