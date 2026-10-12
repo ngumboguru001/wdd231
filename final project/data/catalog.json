@@ -1,0 +1,404 @@
+[
+  {
+    "id": "brand-toyota",
+    "type": "brand",
+    "name": "Toyota",
+    "subtitle": "Japanese automotive manufacturer",
+    "description": "Known globally for passenger cars, SUVs, pickups, and hybrid vehicles. Model features and parts vary by market and year.",
+    "category": "Maintenance",
+    "origin": "Japan",
+    "make": "Toyota",
+    "model": "Corolla, Hilux, RAV4",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Toyota Motor Corporation",
+      "Common models: Corolla, Hilux, RAV4"
+    ],
+    "note": "Use the exact model year and engine code when checking parts."
+  },
+  {
+    "id": "brand-nissan",
+    "type": "brand",
+    "name": "Nissan",
+    "subtitle": "Japanese automotive manufacturer",
+    "description": "Produces passenger vehicles, crossovers, SUVs, and commercial vehicles for international markets.",
+    "category": "Maintenance",
+    "origin": "Japan",
+    "make": "Nissan",
+    "model": "Navara, X-Trail, Note",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Nissan Motor Co.",
+      "Common models: Navara, X-Trail, Note"
+    ]
+  },
+  {
+    "id": "brand-bmw",
+    "type": "brand",
+    "name": "BMW",
+    "subtitle": "German premium vehicle manufacturer",
+    "description": "Manufacturer of premium cars and motorcycles, with model-specific powertrain and electronic systems.",
+    "category": "Maintenance",
+    "origin": "Germany",
+    "make": "BMW",
+    "model": "3 Series, 5 Series, X3",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: BMW AG",
+      "Common models: 3 Series, 5 Series, X3"
+    ]
+  },
+  {
+    "id": "brand-ford",
+    "type": "brand",
+    "name": "Ford",
+    "subtitle": "American automotive manufacturer",
+    "description": "Produces passenger vehicles, pickups, SUVs, and commercial vehicles across multiple markets.",
+    "category": "Maintenance",
+    "origin": "United States",
+    "make": "Ford",
+    "model": "Ranger, Focus, Everest",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Ford Motor Company",
+      "Common models: Ranger, Focus, Everest"
+    ]
+  },
+  {
+    "id": "brand-honda",
+    "type": "brand",
+    "name": "Honda",
+    "subtitle": "Japanese automotive manufacturer",
+    "description": "Known for cars, motorcycles, and power equipment, with a broad global model range.",
+    "category": "Maintenance",
+    "origin": "Japan",
+    "make": "Honda",
+    "model": "Civic, Fit, CR-V",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Honda Motor Co.",
+      "Common models: Civic, Fit, CR-V"
+    ]
+  },
+  {
+    "id": "brand-volkswagen",
+    "type": "brand",
+    "name": "Volkswagen",
+    "subtitle": "German automotive manufacturer",
+    "description": "A global vehicle maker with hatchbacks, sedans, SUVs, and commercial vehicles.",
+    "category": "Maintenance",
+    "origin": "Germany",
+    "make": "Volkswagen",
+    "model": "Golf, Polo, Tiguan",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Volkswagen AG",
+      "Common models: Golf, Polo, Tiguan"
+    ]
+  },
+  {
+    "id": "brand-mazda",
+    "type": "brand",
+    "name": "Mazda",
+    "subtitle": "Japanese automotive manufacturer",
+    "description": "Produces passenger cars and SUVs; parts may differ across generations and engine variants.",
+    "category": "Maintenance",
+    "origin": "Japan",
+    "make": "Mazda",
+    "model": "Demio, Mazda3, CX-5",
+    "compatibility": "Vehicle-specific",
+    "properties": [
+      "Manufacturer: Mazda Motor Corporation",
+      "Common models: Demio, Mazda3, CX-5"
+    ]
+  },
+  {
+    "id": "vehicle-corolla",
+    "type": "vehicle",
+    "name": "Toyota Corolla",
+    "subtitle": "Compact passenger car",
+    "description": "A widely used compact model name with many generations, body styles, engines, and regional variations.",
+    "category": "Maintenance",
+    "origin": "Japan",
+    "make": "Toyota",
+    "model": "Corolla",
+    "compatibility": "Year and engine required",
+    "properties": [
+      "Vehicle class: Compact car",
+      "Part fitment: Depends on generation and engine"
+    ]
+  },
+  {
+    "id": "vehicle-hilux",
+    "type": "vehicle",
+    "name": "Toyota Hilux",
+    "subtitle": "Pickup truck",
+    "description": "A pickup truck range used for work and everyday driving. Suspension, braking, and engine parts vary by generation and trim.",
+    "category": "Suspension",
+    "origin": "Japan",
+    "make": "Toyota",
+    "model": "Hilux",
+    "compatibility": "Year, engine and drivetrain required",
+    "properties": [
+      "Vehicle class: Pickup truck",
+      "Part fitment: Generation and drivetrain specific"
+    ]
+  },
+  {
+    "id": "vehicle-navara",
+    "type": "vehicle",
+    "name": "Nissan Navara",
+    "subtitle": "Pickup truck",
+    "description": "A pickup model sold in several generations and configurations, with differences in engine and drivetrain components.",
+    "category": "Engine",
+    "origin": "Japan",
+    "make": "Nissan",
+    "model": "Navara",
+    "compatibility": "Year and engine required",
+    "properties": [
+      "Vehicle class: Pickup truck",
+      "Part fitment: Generation and engine specific"
+    ]
+  },
+  {
+    "id": "vehicle-bmw3",
+    "type": "vehicle",
+    "name": "BMW 3 Series",
+    "subtitle": "Compact executive car",
+    "description": "A model family with many generations, engines, and equipment levels. Use the chassis generation and engine code when searching.",
+    "category": "Electrical",
+    "origin": "Germany",
+    "make": "BMW",
+    "model": "3 Series",
+    "compatibility": "Generation and engine required",
+    "properties": [
+      "Vehicle class: Compact executive car",
+      "Part fitment: Chassis and engine specific"
+    ]
+  },
+  {
+    "id": "part-oil-filter",
+    "type": "part",
+    "name": "Engine oil filter",
+    "subtitle": "Engine lubrication system",
+    "description": "Filters particles from engine oil. Replacement interval and exact filter design depend on the engine and service schedule.",
+    "category": "Engine",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Exact engine / part number required",
+    "properties": [
+      "System: Engine lubrication",
+      "Purpose: Filter contaminants from oil"
+    ],
+    "note": "Match the filter using the exact engine specification or verified catalogue reference."
+  },
+  {
+    "id": "part-air-filter",
+    "type": "part",
+    "name": "Engine air filter",
+    "subtitle": "Air intake system",
+    "description": "Helps prevent dust and debris from entering the engine intake. Filter dimensions and design vary by model.",
+    "category": "Engine",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Airbox and engine specific",
+    "properties": [
+      "System: Air intake",
+      "Purpose: Filter intake air"
+    ]
+  },
+  {
+    "id": "part-brake-pads",
+    "type": "part",
+    "name": "Brake pads",
+    "subtitle": "Braking system",
+    "description": "Friction components that press against a brake disc or rotor. Material, dimensions, and sensor provisions vary by vehicle.",
+    "category": "Braking",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Axle, caliper and model specific",
+    "properties": [
+      "System: Braking",
+      "Purpose: Friction braking"
+    ]
+  },
+  {
+    "id": "part-brake-disc",
+    "type": "part",
+    "name": "Brake disc / rotor",
+    "subtitle": "Braking system",
+    "description": "Rotating brake component gripped by brake pads. Diameter, thickness, ventilation, and mounting are vehicle-specific.",
+    "category": "Braking",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Exact model and axle required",
+    "properties": [
+      "System: Braking",
+      "Purpose: Friction surface for brake pads"
+    ]
+  },
+  {
+    "id": "part-shock-absorber",
+    "type": "part",
+    "name": "Shock absorber",
+    "subtitle": "Suspension system",
+    "description": "Controls suspension movement and helps maintain tyre contact with the road. Fitment depends on axle, body, and trim.",
+    "category": "Suspension",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Front/rear and trim specific",
+    "properties": [
+      "System: Suspension",
+      "Purpose: Dampen spring oscillation"
+    ]
+  },
+  {
+    "id": "part-ball-joint",
+    "type": "part",
+    "name": "Ball joint",
+    "subtitle": "Steering and suspension",
+    "description": "A pivot joint used in certain steering and suspension designs. Position and specification must be verified for the vehicle.",
+    "category": "Suspension",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Position and chassis specific",
+    "properties": [
+      "System: Suspension / steering",
+      "Purpose: Allow controlled pivot movement"
+    ]
+  },
+  {
+    "id": "part-alternator",
+    "type": "part",
+    "name": "Alternator",
+    "subtitle": "Vehicle electrical system",
+    "description": "Generates electrical power while the engine runs and supports battery charging. Output and mounting differ by engine and trim.",
+    "category": "Electrical",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Engine and output rating specific",
+    "properties": [
+      "System: Electrical charging",
+      "Purpose: Generate electrical power"
+    ]
+  },
+  {
+    "id": "part-starter",
+    "type": "part",
+    "name": "Starter motor",
+    "subtitle": "Engine starting system",
+    "description": "Uses electrical power to crank the engine during startup. Fitment depends on engine, transmission, and mounting arrangement.",
+    "category": "Electrical",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Engine and transmission specific",
+    "properties": [
+      "System: Starting",
+      "Purpose: Crank engine for startup"
+    ]
+  },
+  {
+    "id": "part-headlamp",
+    "type": "part",
+    "name": "Headlamp assembly",
+    "subtitle": "Exterior lighting",
+    "description": "Provides forward lighting and may include several bulbs, LED modules, or integrated controls depending on vehicle design.",
+    "category": "Electrical",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Body style and market specific",
+    "properties": [
+      "System: Lighting",
+      "Purpose: Illuminate road ahead"
+    ]
+  },
+  {
+    "id": "part-bumper",
+    "type": "part",
+    "name": "Front bumper cover",
+    "subtitle": "Body and exterior",
+    "description": "Exterior body component designed for a particular model, trim, sensor package, and market configuration.",
+    "category": "Body",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Year, trim and sensor package specific",
+    "properties": [
+      "System: Body / exterior",
+      "Purpose: Exterior finish and component mounting"
+    ]
+  },
+  {
+    "id": "part-mirror",
+    "type": "part",
+    "name": "Side mirror assembly",
+    "subtitle": "Body and visibility",
+    "description": "Exterior mirror assembly that may include electric adjustment, heating, folding, indicators, and cameras depending on trim.",
+    "category": "Body",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Trim and electrical connector specific",
+    "properties": [
+      "System: Body / visibility",
+      "Purpose: Rearward side visibility"
+    ]
+  },
+  {
+    "id": "part-spark-plug",
+    "type": "part",
+    "name": "Spark plug",
+    "subtitle": "Ignition system",
+    "description": "Provides an ignition spark in compatible petrol engines. Heat range, thread, gap, and type must match engine specifications.",
+    "category": "Engine",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Petrol engines",
+    "compatibility": "Engine code specific",
+    "properties": [
+      "System: Ignition",
+      "Purpose: Ignite compressed air-fuel mixture"
+    ]
+  },
+  {
+    "id": "part-battery",
+    "type": "part",
+    "name": "12V vehicle battery",
+    "subtitle": "Electrical system",
+    "description": "Supplies electrical energy for starting and supports vehicle electrical systems. Capacity, size, and terminal layout vary.",
+    "category": "Electrical",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Battery group and electrical spec required",
+    "properties": [
+      "System: Electrical supply",
+      "Purpose: Provide stored electrical energy"
+    ]
+  },
+  {
+    "id": "part-wiper",
+    "type": "part",
+    "name": "Wiper blades",
+    "subtitle": "Visibility and maintenance",
+    "description": "Clear water from the windscreen. Blade length and attachment style may differ between driver, passenger, and rear positions.",
+    "category": "Maintenance",
+    "origin": "Multi-brand",
+    "make": "All makes",
+    "model": "Multiple models",
+    "compatibility": "Length and connector specific",
+    "properties": [
+      "System: Visibility",
+      "Purpose: Clear water and debris from glass"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Search AutoHub's vehicle brand and spare parts directory by keyword, make, model, and category.">
+  <meta name="author" content="Nyashadzashe Gumboguru"><meta name="theme-color" content="#0b1220">
+  <title>Vehicles & Parts | AutoHub</title><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css"><script type="module" src="js/catalog.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="AutoHub home"><span class="brand-mark">A</span><span>Auto<span class="brand-accent">Hub</span><small>DRIVE SMARTER</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button><nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a href="index.html">Home</a><a class="active" href="catalog.html" aria-current="page">Vehicles & Parts</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main">
+  <section class="page-hero"><div class="container"><p class="eyebrow">THE AUTOHUB DIRECTORY</p><h1>Find your next <span>automotive answer.</span></h1><p>Search vehicle brands, popular models, and common replacement parts in one place.</p><div class="breadcrumbs"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Vehicles & Parts</span></div></div></section>
+  <section class="section"><div class="container">
+    <div class="catalog-toolbar"><div class="search-field"><label class="sr-only" for="catalog-search">Search directory</label><span aria-hidden="true">⌕</span><input id="catalog-search" type="search" placeholder="Search brands, models, parts..." autocomplete="off"></div><div class="filter-row"><label for="type-filter">Type</label><select id="type-filter"><option value="all">All entries</option><option value="brand">Car brands</option><option value="vehicle">Vehicle models</option><option value="part">Spare parts</option></select><label for="category-filter">Category</label><select id="category-filter"><option value="all">All categories</option><option>Engine</option><option>Braking</option><option>Suspension</option><option>Electrical</option><option>Body</option><option>Maintenance</option></select></div></div>
+    <div class="results-summary"><p id="results-count" aria-live="polite">Loading directory…</p><button class="text-button" id="clear-filters">Clear filters</button></div>
+    <div id="catalog-status" class="status-message" role="status">Loading AutoHub directory…</div><div class="catalog-grid" id="catalog-grid"></div>
+    <div class="empty-state" id="empty-state" hidden><div class="empty-icon">⌕</div><h2>No matching entries</h2><p>Try another keyword or clear one of your filters.</p><button class="button button-outline-dark" id="empty-clear">Clear filters</button></div>
+  </div></section>
+  <section class="section section-soft"><div class="container callout-inline"><div><p class="eyebrow">NEED HELP IDENTIFYING A PART?</p><h2>Share your vehicle details with us.</h2><p class="muted">Tell us the make, model, year, and component you're looking for.</p></div><a class="button button-primary" href="contact.html">Send an enquiry →</a></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-main"><a class="brand brand-footer" href="index.html"><span class="brand-mark">A</span><span>Auto<span class="brand-accent">Hub</span><small>DRIVE SMARTER</small></span></a><p>A Nyashadzashe Gumboguru informational directory for automotive learning.</p><nav aria-label="Footer navigation"><a href="catalog.html">Directory</a><a href="contact.html">Contact</a><a href="attributions.html">Attributions</a></nav></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> AutoHub Student Project</span><span>WDD 231 · Web Frontend Development</span></div></footer>
+<dialog class="modal" id="detail-modal" aria-labelledby="detail-title"><div class="modal-head"><div><p class="eyebrow" id="detail-type">DIRECTORY DETAIL</p><h2 id="detail-title">Entry details</h2></div><button class="icon-button" data-close-modal aria-label="Close details">×</button></div><div id="detail-content" class="detail-content"></div><button class="button button-primary modal-done" data-close-modal>Close details</button></dialog>
+</body></html>
